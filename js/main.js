@@ -3,25 +3,25 @@ const baseProductos = [
     {
       nombre: "TV Samsung UHD",
       precio: 1800,
-      imagen: "img/samsung.tv.png"
+      imagen: "img/samsungtv.png"
     },
   
     {
       nombre: "TV LG UHD",
       precio: 1600,
-      imagen: "img/lg.tv.png"
+      imagen: "img/lgtv.png"
     },
   
     {
       nombre: "TV Sony UHD",
       precio: 2500,
-      imagen: "img/sony.tv.png"
+      imagen: "img/sonytv.png"
     },
   
     {
       nombre: "Roku TV",
       precio: 150,
-      imagen: "img/rokup.jpg"
+      imagen: "img/roku.png"
     },
   
     {
