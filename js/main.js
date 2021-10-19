@@ -3,37 +3,37 @@ const baseProductos = [
     {
       nombre: "TV Samsung UHD",
       precio: 1800,
-      imagen: "/img/samsung.tv.png"
+      imagen: "img/samsung.tv.png"
     },
   
     {
       nombre: "TV LG UHD",
       precio: 1600,
-      imagen: "/img/lg.tv.png"
+      imagen: "img/lg.tv.png"
     },
   
     {
       nombre: "TV Sony UHD",
       precio: 2500,
-      imagen: "/img/sony.tv.png"
+      imagen: "img/sony.tv.png"
     },
   
     {
       nombre: "Roku TV",
       precio: 150,
-      imagen: "/img/rokup.jpg"
+      imagen: "img/rokup.jpg"
     },
   
     {
       nombre: "Chromecast TV",
       precio: 200,
-      imagen: "/img/chromecast.jpg"
+      imagen: "img/chromecast.jpg"
     },
   
     {
       nombre: "Fire TV",
       precio: 250,
-      imagen: "/img/firetv.png"
+      imagen: "img/firetv.png"
     },
   ];
 
