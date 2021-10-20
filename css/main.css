@@ -478,3 +478,187 @@ ul {
 }
 
 /* <!-- End Cart Section --> */
+
+
+/* <!-- Start Payment Form --> */
+
+.container_payment {
+    margin: 20px auto;
+    width: 800px;
+    padding: 30px
+}
+
+.card.box1 {
+    width: 350px;
+    height: 500px;
+    background-color: black;
+    color: whitesmoke;
+    border-radius: 0
+}
+
+.card.box2 {
+    width: 450px;
+    height: 520px;
+    background-color: #ffffff;
+    border-radius: 0
+}
+
+.box2 .btn.btn-primary.bar {
+    width: 20px;
+    background-color: transparent;
+    border: none;
+    color: black;
+}
+
+.box2 .btn.btn-primary.bar:hover {
+    color: whitesmoke;
+}
+
+.box1 .btn.btn-primary {
+    background-color: black;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd
+}
+
+.box1 .btn.btn-primary:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    box-shadow: none;
+    height: 20px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 15px 0px;
+    letter-spacing: 1.5px;
+    border-radius: 0
+}
+
+.inputWithIcon {
+    position: relative
+}
+
+.inputWithIcon img {
+    width: 50px;
+    height: 20px;
+    object-fit: cover
+}
+
+.inputWithIcon span {
+    position: absolute;
+    right: 0px;
+    bottom: 9px;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-bottom: 1px solid #ddd
+}
+
+.btn-outline-primary {
+    color: black;
+    background-color: #ddd;
+    border: 1px solid #ddd
+}
+
+.btn-outline-primary:hover {
+    background-color: black;
+    border: 1px solid #ddd
+}
+
+.btn-check:active+.btn-outline-primary,
+.btn-check:checked+.btn-outline-primary,
+.btn-outline-primary.active,
+.btn-outline-primary.dropdown-toggle.show,
+.btn-outline-primary:active {
+    color: #baf0c3;
+    background-color: black;
+    box-shadow: none;
+    border: 1px solid #ddd
+}
+
+.btn-group>.btn-group:not(:last-child)>.btn,
+.btn-group>.btn:not(:last-child):not(.dropdown-toggle),
+.btn-group>.btn-group:not(:first-child)>.btn,
+.btn-group>.btn:nth-child(n+3),
+.btn-group>:not(.btn-check)+.btn {
+    border-radius: 50px;
+    margin-right: 20px
+}
+
+form {
+    font-size: 14px
+}
+
+form .btn.btn-primary {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: 1px solid #ddd
+}
+
+form .btn.btn-primary:hover {
+    background-color: red
+}
+
+@media (max-width:750px) {
+    .container_payment{
+        padding: 10px;
+        width: 100%
+    }
+
+    .card.box1,
+    .card.box2 {
+        width: 100%
+    }
+
+    .nav.nav-tabs .nav-item .nav-link {
+        font-size: 12px
+    }
+}
+
+.finalizar_compra img {
+    width: 100px;
+    object-fit: cover
+}
+
+/* <!-- End Payment Form --> */
+
+/* <!-- Start Thank You Page --> */
+
+.container_gracias{
+    padding: 60px;
+    margin: 40px;
+}
+
+.graciasComprar{
+    background: black;
+    text-align: center;
+    padding: 4rem;
+    border-radius: 5px;
+}
+
+.graciasComprar p{
+    color: white
+}
+
+.graciasComprar h3{
+    color: white
+}
+
+/* <!-- End Thank You Page --> */
