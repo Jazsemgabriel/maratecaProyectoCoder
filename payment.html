@@ -68,16 +68,14 @@
       <div class="container_payment bg-light d-md-flex align-items-center">
         <div class="card box1 shadow-sm p-md-5 p-md-5 p-4">
             
-            
-            <div class="finalizar_compra col-md-4"><div class="finalizar_compra">
-                <img src="img/samsungtv.png" alt="">
-                <p>Samsung UHD</p>
-                <p>S/1,800</p>
-            </div>
+            <div class="finalizar_compra">
+                <div class="resumen_productos">
+                </div>
             <hr>
                 <div class="total">
                     <p>Total</p>
-                <p>S/1,800</p></div>
+                    <p>S/<span id="totalPay" ></span></p>
+                </div>
             </div>
 
         </div>
@@ -91,26 +89,26 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="d-flex flex-column px-md-5 px-4 mb-4"> <span>Agrega tu tarjeta de crédito</span>
-                            <div class="inputWithIcon"> <input class="form-control" type="text" value="1524 2304 4466 5405"> <span class=""> <img src="https://www.freepnglogos.com/uploads/mastercard-png/mastercard-logo-logok-15.png" alt=""></span> </div>
+                            <div class="inputWithIcon"> <input name="card" class="form-control" type="text" value="1524 2304 4466 5405"> <span class=""> <img src="https://www.freepnglogos.com/uploads/mastercard-png/mastercard-logo-logok-15.png" alt=""></span> </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="d-flex flex-column ps-md-5 px-md-0 px-4 mb-4"> <span>Vencimiento<span class="ps-1"></span></span>
-                            <div class="inputWithIcon"> <input type="text" class="form-control" value="11/25"> <span class="fas fa-calendar-alt"></span> </div>
+                            <div class="inputWithIcon"> <input name="date" type="text" class="form-control" value="11/25"> <span class="fas fa-calendar-alt"></span> </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="d-flex flex-column pe-md-5 px-md-0 px-4 mb-4"> <span>CVV</span>
-                            <div class="inputWithIcon"> <input type="password" class="form-control" value="666"> <span class="fas fa-lock"></span> </div>
+                            <div class="inputWithIcon"> <input name="cvv" type="password" class="form-control" value="666"> <span class="fas fa-lock"></span> </div>
                         </div>
                     </div>
                     <div class="col-12">
                         <div class="d-flex flex-column px-md-5 px-4 mb-4"> <span>Nombre completo</span>
-                            <div class="inputWithIcon"> <input class="form-control text-uppercase" type="text" value="Gabriel Rodríguez The Big Daddy"> <span class="far fa-user"></span> </div>
+                            <div class="inputWithIcon"> <input name="name" class="form-control text-uppercase" type="text" value="Gabriel Rodríguez The Big Daddy"> <span class="far fa-user"></span> </div>
                         </div>
                     </div>
                     <div class="col-12 px-md-5 px-4 mt-3">
-                        <a href="gracias.html" class="btn btn-primary w-100">Paga S/1,800</a>
+                        <button type="button" class="btn btn-primary w-100 action-pay"> Paga S/ <span id="pay">  </span></button>
                     </div>
                 </div>
             </form>

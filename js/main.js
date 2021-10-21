@@ -134,3 +134,36 @@ function actualizarCarritoDOM() {
 
 }
 
+// Destruir el carrito después de pagar
+
+$(".action-pay").click(function(){
+  localStorage.removeItem("carrito")
+  window.location.href = "gracias.html"
+})
+
+// Mostrar monto total en payment
+
+var carritoStorage = JSON.parse(localStorage.getItem("carrito"));
+var carritoTemporal = new Carrito(carritoStorage);
+var totalPagar = carritoTemporal.calcularTotalPagar()
+$("#pay,#totalPay").html(totalPagar)
+
+
+// Productos a comprar
+
+        var htmlProductos = ``
+        for (var i = 0;  i < carritoTemporal.productos.length; i++) {
+            if (carritoTemporal.productos[i] > 0) {
+                var html = `<div class="productos_payment d-flex align-items-center mb-3">
+                <img class="mx-3" src="${baseProductos[i].imagen}" alt="">
+                <div> 
+                    <p>${baseProductos[i].nombre}</p>
+                    <p> Cantidad: ${carritoTemporal.productos[i]}</p>
+               </div>
+            </div>`
+                htmlProductos = htmlProductos + html
+            }
+
+        }
+        
+        $('.resumen_productos').html(htmlProductos)
