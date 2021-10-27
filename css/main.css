@@ -260,11 +260,12 @@ body{
 } 
 
 .carritoInner{
+    transform: translateX(100%);
     position: fixed;
     z-index: 100;
-    top: 96.17px;
+    top: 0;
     right: 0;
-    height: 100%;
+    height: 100vh;
     transition: all .3s ease-in-out;
     padding: 2rem;
     background-color: #ffffff;
@@ -272,6 +273,11 @@ body{
     min-width: 25rem;
     box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 10%);
 }
+
+.carritoInner.active {
+    transform: translateX(0%);
+}
+    
 
 .carritoInner .precioTotal {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -286,6 +292,20 @@ body{
 .carritoInner .comprar a {
     background-color: blue;
     color: white;
+}
+
+#messages-wraper{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1000;
+}
+
+.message {
+background-color: white;
+padding: 15px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+margin-bottom: 15px;
 }
 
 

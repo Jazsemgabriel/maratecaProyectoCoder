@@ -46,6 +46,14 @@ class Carrito {
     }
   }
 
+  cantidadProductos() {
+    var cantidad = 0
+    for (var i = 0; i < this.productos.length; i++) {
+        cantidad = cantidad + this.productos[i] 
+    }
+    return cantidad ;
+  }
+
   calcularTotalPagar() {
     var total = 0
     for (var i = 0; i < this.productos.length; i++) {
@@ -80,6 +88,9 @@ if (localStorage.getItem("carrito") == null) {
 actualizarCarritoDOM()
 
 var costoTotal = 0;
+var messageId = 0;
+
+// Agregar producto al carrito
 
 $('.add_cart_btn').click(function(){
   var codigoProducto = parseInt(this.getAttribute("data-id"));
@@ -91,6 +102,13 @@ $('.add_cart_btn').click(function(){
   // Actualizar el carrito en el DOM
 
   actualizarCarritoDOM()
+  messageId++;
+  var messageIdTemporal = messageId;
+  $('#messages-wraper').append(`<div class="message" id="message-${messageIdTemporal}"> <p class="mb-0">¡Se agregó el producto al carrito!</p></div>`)
+  setTimeout(() => {
+    $(`#message-${messageIdTemporal}`).remove()
+  }, 2500);
+
 })
 
   // Remover productos del carrito
@@ -132,6 +150,9 @@ function actualizarCarritoDOM() {
 
     $('#precioTotal').html('S/' + carrito.calcularTotalPagar())
 
+
+    $('#cartq').html(carrito.cantidadProductos())
+
 }
 
 // Destruir el carrito después de pagar
@@ -167,3 +188,9 @@ $("#pay,#totalPay").html(totalPagar)
         }
         
         $('.resumen_productos').html(htmlProductos)
+
+        // Evento icon carrito
+
+        $(".action-toggle-cart").click(function(){
+          $(".carritoInner").toggleClass("active")
+        })
