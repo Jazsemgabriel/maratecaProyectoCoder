@@ -159,6 +159,7 @@ body{
     border: 1px solid blue;
     transition: all 0.2s;
     margin-top: 15px;
+    text-decoration: none;
 }
 
 .slider_section .detail-box a:hover{
@@ -687,4 +688,89 @@ form .btn.btn-primary:hover {
     color: white
 }
 
+.container_gracias a{
+    display: inline-block;
+    padding: 10px 45px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid blue;
+    transition: all 0.2s;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.container_gracias a:hover{
+    background-color: whitesmoke;
+    color: blue;
+}
+
 /* <!-- End Thank You Page --> */
+
+/* <!-- Footer --> */
+
+.info_section{
+    background-color: black;
+    color: whitesmoke;
+    padding: 90px 0 45px 0;
+}
+
+.info_section h5{
+    margin-bottom: 15px ;
+    font-size: 24px;
+}
+
+.info_section .info_links ul{
+    padding: 0;
+}
+
+.info_section .info_links ul li{
+   list-style: none;
+}
+
+.info_section .info_links ul li a{
+    display: inline-block;
+    color: whitesmoke;
+    margin-bottom: 5px;
+    text-decoration: none;
+ }
+
+ .info_section .info_links ul li a:hover{
+    color: yellow
+ }
+
+ .info_section .info_message .social_box{
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+ }
+
+ .info_section .info_message .social_box a{
+    margin-right: 25px;
+    color: whitesmoke;
+    font-size: 24px;
+ }
+
+ /* <!-- Bottom Footer --> */
+
+ .footer_section{
+     position: relative;
+     background-color: black;
+     text-align: center;
+ }
+
+ .footer_section p{
+    color: whitesmoke;
+    padding: 20px 0;
+    margin: 0;
+
+}
+
+.footer_section p a{
+   color: yellow;
+   text-decoration: none;
+}
+
+.footer_section p a:hover{
+   color: red;
+ }
